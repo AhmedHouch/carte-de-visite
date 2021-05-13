@@ -121,7 +121,19 @@ a:hover {
 
 /*Responsive design*/
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px) and (min-width: 940px) {
+    .header {
+        flex-direction: column;
+    }
+    .titre,
+    .navigation,
+    .section {
+        min-width: 200px;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 940px) {
     .header {
         flex-direction: column;
     }
@@ -134,5 +146,24 @@ a:hover {
     .section {
         min-width: 200px;
         margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .header {
+        flex-direction: column;
+    }
+    .corps {
+        flex-direction: column-reverse;
+        height: fit-content;
+    }
+    .titre,
+    .navigation,
+    .section {
+        min-width: 200px;
+        margin-top: 20px;
+    }
+    h1 {
+        color: blue;
     }
 }
