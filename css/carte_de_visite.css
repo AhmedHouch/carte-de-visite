@@ -1,0 +1,138 @@
+@font-face {
+    font-family: 'COTILLIO';
+    src: url('fonts/COTILLIO.ttf') format('truetype')
+}
+
+body {
+    display: block;
+    background-color: rgb(245, 243, 243);
+    font-family: cursive;
+}
+
+.header {
+    display: flex;
+    height: fit-content;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.figure {
+    max-width: 150px;
+    min-width: 150px;
+    margin-left: 4%;
+    padding: 3px;
+    border: rgb(226, 225, 225) 1px solid;
+    padding: 5px;
+    box-shadow: 5px 5px rgb(226, 225, 225);
+    background: url("images/argent.jpg");
+}
+
+.avatar {
+    width: 100%;
+    height: 100%;
+}
+
+.titre,
+.navigation,
+.section {
+    padding: 3px;
+    border: goldenrod 1px solid;
+    border-radius: 20px/10px;
+    box-shadow: 5px 5px goldenrod;
+    background: url("images/or.jpg");
+}
+
+.fond {
+    width: 100%;
+    height: 100%;
+    border: #ccc 1px solid;
+    border-radius: 20px/10px;
+    background-color: rgb(153, 152, 152);
+    overflow: auto;
+}
+
+.infos {
+    margin-top: 3%;
+    margin-left: 5%;
+    max-width: 750px;
+    word-break: keep-all;
+}
+
+.titre {
+    width: 76%;
+    text-align: center;
+    font-family: "COTILLIO";
+}
+
+.corps {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 430px;
+}
+
+.navigation {
+    width: 16%;
+    height: 400px;
+}
+
+.section {
+    width: 70%;
+    height: 400px;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+.section h4 {
+    font-size: 1.4em;
+}
+
+.section p {
+    font-size: 1.15em;
+}
+
+em {
+    font-weight: bold;
+}
+
+ul {
+    list-style: square;
+}
+
+a:link {
+    color: rgb(31, 31, 126);
+}
+
+a:visited {
+    color: #2a4e0c;
+}
+
+a:active {
+    background: #265301;
+    color: #CDFEAA;
+}
+
+a:hover {
+    background-color: goldenrod;
+}
+
+
+/*Responsive design*/
+
+@media screen and (max-width: 1024px) {
+    .header {
+        flex-direction: column;
+    }
+    .corps {
+        flex-direction: column-reverse;
+        height: fit-content;
+    }
+    .titre,
+    .navigation,
+    .section {
+        min-width: 200px;
+        margin-top: 20px;
+    }
+}
