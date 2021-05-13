@@ -133,7 +133,7 @@ a:hover {
     }
 }
 
-@media screen and (max-width: 940px) {
+@media screen and (max-width: 939px) {
     .header {
         flex-direction: column;
     }
